@@ -1,0 +1,9 @@
+[Unit]
+Description=Linux keys intercepting daemon
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/keysid
+
+[Install]
+WantedBy=multi-user.target
